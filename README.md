@@ -68,3 +68,51 @@
 
 } 
     }
+    
+  ### public static void  freq(){                      ///Frequency of each element in sorted array
+        int a[]={10,10,10,20,20,30,40,50};
+        int count=1;
+        System.out.println();
+        int i;
+        for(i=1;i<a.length;i++)                                      
+        {
+            if(a[i]!=a[i-1]){
+                System.out.print(count+" ");
+                count=1;
+            }
+            else{
+                 count++;
+            }}
+            if(a.length==1 ||a[i-1]==a[i-2]){
+                System.out.println(count);
+            }
+            else if(a[i-1]!=a[i-2]){
+                 System.out.println(count);
+            }
+            count=1;
+            for(i=1;i<a.length;)  {
+                while(i<a.length && a[i]==a[i-1]){
+                    count++;
+                    i++;
+                }
+                System.out.println(count);
+                count=1;
+                i++;
+            } 
+           if(a.length==1 ||a[a.length-1]!=a[a.length-2]){
+                System.out.println(count);
+        }  
+    }
+   ###  public static void  stockbuy(){                  ///we are give with stock price for upcoming day we neeed to buy or sell product in such way we maximize profit
+        int a[]={10,10,11,30,27,30,40,60};
+        int count=0;
+        System.out.println();
+        int i;
+        for(i=1;i<a.length;i++)                                      
+        {
+            if(a[i]>a[i-1]){
+                count=count+(a[i-1]-a[i]);
+            }
+    }
+           System.out.println("buy"+" "+count);
+}  
