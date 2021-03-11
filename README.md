@@ -116,3 +116,27 @@
     }
            System.out.println("buy"+" "+count);
 }  
+
+
+
+
+### public static void movezerotoend(){
+        int a[]={10,20,0,0,59,0,0,55,0,777,0,99};
+        int index=0;
+        for(int i=0;i<a.length;i++){
+             if(a[i]!=0){
+                 int temp=a[index];
+                 a[index]=a[i];
+                 a[i]=temp;
+                 index++;
+             }
+             }
+             System.out.println();
+             for(int i=0;i<a.length;i++){
+         
+                   System.out.print(a[i]+" ");
+             } 
+    }
+
+
+
