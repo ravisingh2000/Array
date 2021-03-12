@@ -138,5 +138,34 @@
              } 
     }
 
+ ### public static void cyclesort(){         //we can sort in minium write operation 
+         int a[]={50,80,30,70,20,10};
+        int count=0,temp1=0,temp=a[0];
+        int pos;
+        for(int cs=0;cs<a.length;cs++){
+            temp=a[cs];
+            pos=cs;
+             for(int j=cs+1;j<a.length;j++){
+                 if(temp>a[j])
+                 pos++;
+             }
+              temp1=a[pos];
+             a[pos]=temp;
+             temp=temp1;
+           while(pos!=cs){
+               pos=cs;
+            for(int j=cs+1;j<a.length;j++){
+                if(temp>a[j])
+                pos++;
+            } 
+            temp1=a[pos];
+             a[pos]=temp;
+             temp=temp1;
+           }  
 
+        }
+        for(int i1=0;i1<a.length;i1++){
+            System.out.print(a[i1]+" ")    ;
+       }
+    }
 
