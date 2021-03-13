@@ -169,3 +169,36 @@
        }
     }
 
+ ### public static void reverse(){
+        int a[]={10,110,42,520,534};
+        int i=0;
+        int j=a.length-1;
+        while(i<j){
+            int temp=a[i];
+            a[i]=a[j];
+            a[j]=temp;
+            i++;j--;
+        }
+        for (int j2 = 0; j2 < a.length; j2++) {
+                System.out.print(a[j2]+" ");
+        }
+    }
+   ### public static void removeduplicate(){
+        int a[]={10,20,33,50,55,66,77};
+        int index=1;
+        for(int i=1;i<a.length;i++){
+            
+            if(a[i]!=a[i-1]){
+               
+                   a[index]=a[i];
+                   index++;
+                 
+                }
+                 
+    }
+    System.out.println();
+    for(int i=0;i<a.length;i++){
+
+          System.out.print(a[i]+" ");
+    }        
+}
