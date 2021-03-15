@@ -202,3 +202,13 @@
           System.out.print(a[i]+" ");
     }        
 }
+ #####Generate all the number in increasing order that include{5,6} upto 10 time
+  LinkedList i=new LinkedList();
+        i.add(5);
+        i.add(6); 
+        for(int i1=0;i1<10;i1++){
+            int cur=(Integer)i.removeFirst();
+            if(cur%2==0)
+            System.out.println(cur);
+            i.add(cur*10+5);
+            i.add(cur*10+6);}
