@@ -202,7 +202,7 @@
           System.out.print(a[i]+" ");
     }        
 }
- #####Generate all the number in increasing order that include{5,6} upto 10 time
+ ##### Generate all the number in increasing order that include{5,6} upto 10 time
   LinkedList i=new LinkedList();
         i.add(5);
         i.add(6); 
