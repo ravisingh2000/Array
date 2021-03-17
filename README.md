@@ -211,7 +211,25 @@
             if(cur%2==0)
             System.out.println(cur);
             i.add(cur*10+5);
-            i.add(cur*10+6);}
+            i.add(cur*10+6);}             
+######## public static int max(int a[]){                   ////for finding maximum subarray sum  insimple array not in cirrcularsubbarary   
+    int max=a[0];
+    int sub=a[0];
+    for(int i=1;i<a.length;i++) {
+            if( sub+a[i]>a[i]){
+                sub=sub+a[i];
+                    
+            }
+    
+           
+           else{
+                 sub=a[i];
+           }
+           if(max<sub){
+            max=sub;}
+}
+      return max;
+}            
 
 ##### public static void  csub(){                ///maximum array sum in circular subarray 
                                                              
