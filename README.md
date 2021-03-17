@@ -212,3 +212,21 @@
             System.out.println(cur);
             i.add(cur*10+5);
             i.add(cur*10+6);}
+
+##### public static void  csub(){                ///maximum array sum in circular subarray 
+                                                             
+    int a[]={10,34,10,34,10};                                 //this max function for finding max sum in simple subarray not in circular subrray
+    int s=max(a);
+    int count=0;
+    for(int i=0;i<a.length;i++){
+        count=count+a[i];
+         a[i]=-a[i];
+    }
+    int ma=max(a)+count;
+    if(s>ma){
+          System.out.println(s);
+    }
+    else{
+        System.out.println(ma);
+    }
+}
