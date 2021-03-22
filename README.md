@@ -248,3 +248,44 @@
         System.out.println(ma);
     }
 }
+########################################## finding kth minimum element with good time complexity##########################################################################
+ public static int lumuto(int l,int h){
+           int index=l-1;
+           int pivot=arr[h];
+           for (int i = l; i < h; i++) {
+                 if(pivot<arr[i]){
+                        index++;
+                        int temp=arr[i];
+                        arr[i]=arr[index];
+                        arr[index]=temp;
+                        
+                      }
+              
+           }
+         
+           int t=arr[index+1];
+           arr[index+1]=arr[h];
+           arr[h]=t;
+          
+            return index+1;
+         } 
+        public static void minelment() {
+          int k=3;
+          int l=0;
+          int h=arr.length-1;
+                    while(l<=h){
+
+              int p=lumuto(l,h);
+              if(p==k-1){
+                     System.out.println(arr[p]);
+                     break;
+              }
+              else if(p>k-1){
+                          h=p-1;         
+              }
+              else{
+                        l=p+1;
+                        //System.out.println(l);
+              }
+          }
+        }
