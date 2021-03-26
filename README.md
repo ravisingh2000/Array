@@ -289,3 +289,29 @@
               }
           }
         }
+###### public static void productmax()         //maximum product subbarary
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int arr[]={-6,2,-4,3);
+		int max=arr[0];
+		int min=arr[0];
+	    int output=arr[0];
+	    for(int i=1;i<n;i++){
+	           if(arr[i]<0){int temp=max;
+	           max=min;
+	           min=temp;}
+	           else if(arr[i]==0){
+	               max=0;
+	               min=0;
+	           }
+
+	           max=Math.max(arr[i],arr[i]*max);
+	           min=Math.min(arr[i],arr[i]*min);
+	     
+	           if(output<max){
+	               output=max;
+	           }
+	    }
+	    System.out.println(output);
+	}}
