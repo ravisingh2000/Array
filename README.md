@@ -315,3 +315,20 @@
 	    }
 	    System.out.println(output);
 	}}
+###### public static void kmaxsum() {
+              int k=3;
+              int d=0;
+              int max=Integer.MIN_VALUE;
+              for (int i = 0; i < k; i++) {
+                      d+=arr[i];
+              }
+              max=d;
+              for (int i = k; i < arr.length; i++) {                 
+                         d+=arr[i]-arr[i-k];
+                         if(d>max){
+                           max=d;
+                         }
+              }
+               System.out.println("ksum : "+max);
+           }   
+          
